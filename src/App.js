@@ -170,6 +170,7 @@ function App() {
         </div>
         {/* send type to dispatch to tell on what we need to do if button pressed */}
         <button
+          className="clear-input"
           onClick={() => {
             dispatch({ type: "all-clear" });
           }}
@@ -177,13 +178,15 @@ function App() {
           AC
         </button>
         <button
+          className="clear-input"
           onClick={() => {
             dispatch({ type: "clear-line" });
           }}
         >
           CE
         </button>
-        <button
+        <button          
+          className="clear-input"
           onClick={() => {
             dispatch({ type: "backspace" });
           }}
@@ -210,6 +213,7 @@ function App() {
           onClick={() => {
             dispatch({ type: "eval" });
           }}
+          className="evaluate"
         >
           =
         </button>
